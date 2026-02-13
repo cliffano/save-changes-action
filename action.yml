@@ -11,6 +11,11 @@ inputs:
     description: GitHub token
     type: string
     required: true
+  message:
+    description: Commit message
+    type: string
+    required: false
+    default: Save changes
   git_user_name:
     description: Git user name
     type: string
@@ -35,7 +40,7 @@ runs:
       run: git add -A || echo "Nothing to add"
     - name: Commit the changes
       shell: bash
-      run: git commit -m "Save changes" || echo "Nothing to commit"
+      run: git commit -m "${{ inputs.message }}"
     - name: Push the changes to remote repository
       uses: ad-m/github-push-action@v1.0.0
       with:

@@ -18,3 +18,5 @@ Create a major release:
       build:
         steps:
           - uses: cliffano/save-changes-action@main
+            with:
+              message: 'Save changes'
