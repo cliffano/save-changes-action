@@ -1,13 +1,13 @@
-<img align="right" src="https://raw.github.com/cliffano/release-action/master/avatar.jpg" alt="Avatar"/>
+<img align="right" src="https://raw.github.com/cliffano/save-changes-action/main/avatar.jpg" alt="Avatar"/>
 
-[![Build Status](https://github.com/cliffano/release-action/workflows/CI/badge.svg)](https://github.com/cliffano/release-action/actions?query=workflow%3ACI)
-[![Security Status](https://snyk.io/test/github/cliffano/release-action/badge.svg)](https://snyk.io/test/github/cliffano/release-action)
+[![Build Status](https://github.com/cliffano/save-changes-action/workflows/CI/badge.svg)](https://github.com/cliffano/save-changes-action/actions?query=workflow%3ACI)
+[![Security Status](https://snyk.io/test/github/cliffano/save-changes-action/badge.svg)](https://snyk.io/test/github/cliffano/save-changes-action)
 <br/>
 
 Save Changes GitHub Action
 --------------------------
 
-GitHub Action for creating a repository release using [RTK](https://github.com/cliffano/rtk).
+GitHub Action for adding, committing, and pushing changes to a repository.
 
 Usage
 -----
@@ -17,8 +17,4 @@ Create a major release:
     jobs:
       build:
         steps:
-          - uses: cliffano/save-changes-action@latest
-            with:
-              type: 'major'
-
-The type value can be one of `major`, `minor`, or `patch`.
+          - uses: cliffano/save-changes-action@main
