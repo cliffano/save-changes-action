@@ -28,6 +28,11 @@ inputs:
     type: string
     required: false
     default: pakkunbot@users.noreply.github.com
+  push_changes:
+    description: Whether to push release commit and tags to remote repository
+    type: string
+    required: false
+    default: 'true'
 runs:
   using: 'composite'
   steps:
@@ -44,6 +49,7 @@ runs:
       shell: bash
       run: git commit -m "${{ inputs.message }}"
     - name: Push the changes to remote repository
+      if: ${{ inputs.push_changes == 'true' }}
       uses: ad-m/github-push-action@v1.3.0
       with:
         tags: true

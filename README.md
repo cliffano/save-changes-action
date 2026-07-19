@@ -13,7 +13,7 @@ GitHub Action for adding, committing, and pushing changes to a repository.
 
 ## Usage
 
-Create a major release:
+Save local changes with commit message 'Save changes':
 
 ```yaml
 jobs:
@@ -22,7 +22,10 @@ jobs:
       - uses: cliffano/save-changes-action@main
         with:
           message: 'Save changes'
+          push_changes: 'true'
 ```
+
+When running tests, set push_changes to false so the action does not push commits or tags to remote repository.
 
 ## Colophon
 
