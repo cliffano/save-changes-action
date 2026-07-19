@@ -1,0 +1,15 @@
+---
+package_name: save-changes-action
+author: Cliffano Subagio
+generator:
+  component: github-action
+  inputs:
+    project_id: save-changes-action
+    project_name: Save Changes GitHub Action
+    project_desc: GitHub Action for adding, committing, and pushing changes to a repository
+    author_name: Cliffano Subagio
+    author_email: cliffano@example.com
+    author_url: https://cliffano.com
+    github_id: cliffano
+    github_repo: save-changes-action
+    github_token_prefix: STUDIO
