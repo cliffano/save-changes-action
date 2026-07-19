@@ -12,7 +12,8 @@
 | <code>github_token</code> | <p>GitHub token</p> | <code>true</code> | <code>""</code> |
 | <code>message</code> | <p>Commit message</p> | <code>false</code> | <code>Save changes</code> |
 | <code>git_user_name</code> | <p>Git user name</p> | <code>false</code> | <code>pakkunbot</code> |
-| <code>git_user_email</code> | <p>Git user email</p> | <code>false</code> | <code>pakkunbot@users.noreply.github.com</code> |</p>
+| <code>git_user_email</code> | <p>Git user email</p> | <code>false</code> | <code>pakkunbot@users.noreply.github.com</code> |
+| <code>push_changes</code> | <p>Whether to push release commit and tags to remote repository</p> | <code>false</code> | <code>true</code> |</p>
 <h2>Runs</h2>
 <p>This action is a <code>composite</code> action.</p>
 <h2>Usage</h2>
@@ -41,5 +42,11 @@ git_user_email:
 #
 # Required: false
 # Default: pakkunbot@users.noreply.github.com
+
+push_changes:
+# Whether to push release commit and tags to remote repository
+#
+# Required: false
+# Default: true
 </code></pre>
 <p>```</p>
