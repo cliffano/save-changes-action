@@ -47,7 +47,7 @@ runs:
       run: git add -A || echo "Nothing to add"
     - name: Commit the changes
       shell: bash
-      run: git commit -m "${{ inputs.message }}"
+      run: git commit -m "${{ inputs.message }}" || echo "Nothing to commit"
     - name: Push the changes to remote repository
       if: ${{ inputs.push_changes == 'true' }}
       uses: ad-m/github-push-action@v1.3.0

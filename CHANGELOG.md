@@ -15,6 +15,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Start using Actobat as Makefile
 - Shift version setting to action.yml as custom property
 - Upgrade ad-m/github-push-action to v1.3.0
+- Allow nothing to commit pass-through
 
 ## 1.1.0 - 2026-03-14
 ### Changed
