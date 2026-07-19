@@ -2,6 +2,8 @@
 name: 'Studio Save Changes GitHub Action'
 description: |
   GitHub Action for adding, committing, and pushing changes to a repository.
+# Custom version field
+version: 1.1.1-pre.0
 author: 'Cliffano Subagio'
 branding:
   icon: 'save'
