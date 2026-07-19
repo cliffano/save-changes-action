@@ -1,4 +1,4 @@
-time="2026-07-19T06:33:46Z" level=info msg="Using docker host 'unix:///var/run/docker.sock', and daemon socket 'unix:///var/run/docker.sock'"
+time="2026-07-19T06:59:45Z" level=info msg="Using docker host 'unix:///var/run/docker.sock', and daemon socket 'unix:///var/run/docker.sock'"
 [Test Local Action Outside Standard GitHub Workflows Directory/test] ⭐ Run Set up job
 [Test Local Action Outside Standard GitHub Workflows Directory/test] 🚀  Start image=catthehacker/ubuntu:act-latest
 [Test Local Action Outside Standard GitHub Workflows Directory/test]   🐳  docker pull image=catthehacker/ubuntu:act-latest platform= username= forcePull=true
@@ -8,17 +8,17 @@ time="2026-07-19T06:33:46Z" level=info msg="Using docker host 'unix:///var/run/d
 [Test Local Action Outside Standard GitHub Workflows Directory/test]   ✅  Success - Set up job
 [Test Local Action Outside Standard GitHub Workflows Directory/test] ⭐ Run Main Checkout code
 [Test Local Action Outside Standard GitHub Workflows Directory/test]   🐳  docker cp src=/opt/workspace/. dst=/opt/workspace
-[Test Local Action Outside Standard GitHub Workflows Directory/test]   ✅  Success - Main Checkout code [27.558251ms]
+[Test Local Action Outside Standard GitHub Workflows Directory/test]   ✅  Success - Main Checkout code [22.519112ms]
 [Test Local Action Outside Standard GitHub Workflows Directory/test] ⭐ Run Main Test Save Changes Action
 [Test Local Action Outside Standard GitHub Workflows Directory/test] ⭐ Run Main Set git user email
 [Test Local Action Outside Standard GitHub Workflows Directory/test]   🐳  docker exec cmd=[bash --noprofile --norc -e -o pipefail /var/run/act/workflow/1-composite-0.sh] user= workdir=
-[Test Local Action Outside Standard GitHub Workflows Directory/test]   ✅  Success - Main Set git user email [372.478219ms]
+[Test Local Action Outside Standard GitHub Workflows Directory/test]   ✅  Success - Main Set git user email [282.93102ms]
 [Test Local Action Outside Standard GitHub Workflows Directory/test] ⭐ Run Main Set git user name
 [Test Local Action Outside Standard GitHub Workflows Directory/test]   🐳  docker exec cmd=[bash --noprofile --norc -e -o pipefail /var/run/act/workflow/1-composite-1.sh] user= workdir=
-[Test Local Action Outside Standard GitHub Workflows Directory/test]   ✅  Success - Main Set git user name [59.187237ms]
+[Test Local Action Outside Standard GitHub Workflows Directory/test]   ✅  Success - Main Set git user name [53.503718ms]
 [Test Local Action Outside Standard GitHub Workflows Directory/test] ⭐ Run Main Add new files
 [Test Local Action Outside Standard GitHub Workflows Directory/test]   🐳  docker exec cmd=[bash --noprofile --norc -e -o pipefail /var/run/act/workflow/1-composite-2.sh] user= workdir=
-[Test Local Action Outside Standard GitHub Workflows Directory/test]   ✅  Success - Main Add new files [58.47141ms]
+[Test Local Action Outside Standard GitHub Workflows Directory/test]   ✅  Success - Main Add new files [53.510619ms]
 [Test Local Action Outside Standard GitHub Workflows Directory/test] ⭐ Run Main Commit the changes
 [Test Local Action Outside Standard GitHub Workflows Directory/test]   🐳  docker exec cmd=[bash --noprofile --norc -e -o pipefail /var/run/act/workflow/1-composite-3.sh] user= workdir=
 [Test Local Action Outside Standard GitHub Workflows Directory/test]   | On branch main
@@ -26,11 +26,11 @@ time="2026-07-19T06:33:46Z" level=info msg="Using docker host 'unix:///var/run/d
 [Test Local Action Outside Standard GitHub Workflows Directory/test]   | 
 [Test Local Action Outside Standard GitHub Workflows Directory/test]   | nothing to commit, working tree clean
 [Test Local Action Outside Standard GitHub Workflows Directory/test]   | Nothing to commit
-[Test Local Action Outside Standard GitHub Workflows Directory/test]   ✅  Success - Main Commit the changes [61.283139ms]
+[Test Local Action Outside Standard GitHub Workflows Directory/test]   ✅  Success - Main Commit the changes [55.478319ms]
 [Test Local Action Outside Standard GitHub Workflows Directory/test]   ☁  git clone 'https://github.com/ad-m/github-push-action' # ref=v1.3.0
-[Test Local Action Outside Standard GitHub Workflows Directory/test]   ✅  Success - Main Test Save Changes Action [1.509249467s]
+[Test Local Action Outside Standard GitHub Workflows Directory/test]   ✅  Success - Main Test Save Changes Action [1.457655783s]
 [Test Local Action Outside Standard GitHub Workflows Directory/test] ⭐ Run Post Test Save Changes Action
-[Test Local Action Outside Standard GitHub Workflows Directory/test]   ✅  Success - Post Test Save Changes Action [41.818µs]
+[Test Local Action Outside Standard GitHub Workflows Directory/test]   ✅  Success - Post Test Save Changes Action [41.893µs]
 [Test Local Action Outside Standard GitHub Workflows Directory/test] ⭐ Run Complete job
 [Test Local Action Outside Standard GitHub Workflows Directory/test] Cleaning up container for job test
 [Test Local Action Outside Standard GitHub Workflows Directory/test]   ✅  Success - Complete job
