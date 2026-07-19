@@ -1,13 +1,12 @@
 ---
-name: 'Studio Save Changes GitHub Action'
+name: Studio Save Changes GitHub Action
 description: |
   GitHub Action for adding, committing, and pushing changes to a repository.
-# Custom version field
-version: 1.1.1-pre.0
-author: 'Cliffano Subagio'
+version: 2.0.0
+author: Cliffano Subagio
 branding:
-  icon: 'save'
-  color: 'black'
+  icon: save
+  color: black
 inputs:
   github_token:
     description: GitHub token
@@ -34,7 +33,7 @@ inputs:
     required: false
     default: 'true'
 runs:
-  using: 'composite'
+  using: composite
   steps:
     - name: Set git user email
       shell: bash
